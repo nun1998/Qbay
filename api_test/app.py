@@ -2,7 +2,7 @@ import os
 
 # 主文件位置
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
+print(BASE_DIR)
 # token
 TOKEN = ""
 
