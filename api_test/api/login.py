@@ -10,4 +10,5 @@ class LoginApi:
 
     # 定义接口调用方法
     def login(self, login_data):
+        print(self.url)
         return requests.post(url=self.url, json=login_data)
