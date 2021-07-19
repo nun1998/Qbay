@@ -2,6 +2,7 @@
 import requests
 import app
 
+
 # 创建接口类
 class LoginApi:
     # 初始化

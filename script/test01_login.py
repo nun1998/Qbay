@@ -1,6 +1,5 @@
 # 导包
 import app
-import hashlib
 import unittest
 from api.login import LoginApi
 from tools.dbunit import DBUnit
@@ -23,7 +22,6 @@ def build_data():
         status_code = case_data[4]
         test_data.append((phone, password, status_code))
     # 返回数据
-    print(2)
     return test_data
 
 
@@ -56,3 +54,4 @@ class TestLogin(unittest.TestCase):
         if response.status_code == 200:
             app.TOKEN = "Bearer " + response.json().get("access_token")
             app.header_data["Authorization"] = app.TOKEN
+        print(app.TOKEN)
